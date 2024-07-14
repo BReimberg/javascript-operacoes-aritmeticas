@@ -1,0 +1,99 @@
+/* Zera a margem e o preenchimento de todos os elementos, define box-sizing para border-box para facilitar o controle do tamanho dos elementos e define a fonte padrão como "Josefin Sans". */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+/* Define a cor de fundo e um gradiente para o fundo da página. Usa flexbox para centralizar o conteúdo horizontal e verticalmente, e define a altura do body como 100% da altura da tela. */
+body {
+    background-color: #c9d6ff;
+    background: linear-gradient(to right, #ddffa7, #dbff86);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Define o estilo do contêiner principal: cor de fundo branca, bordas arredondadas, sombra para dar profundidade, largura fixa com máximo de 100% do contêiner pai e altura mínima de 480px. */
+.container {
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+}
+
+/* Centraliza o texto do título e define margens verticais de 10px. */
+h1 {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+/* Usa flexbox para centralizar o formulário e seus itens em uma coluna. */
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Define uma margem superior de 5px para os elementos label e input. */
+label, input{
+    margin-top: 5px;
+}
+
+/* Bordas arredondadas, alinhamento centralizado do texto e uma cor para borda */
+input {
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid yellowgreen;
+    padding: 5px 0;
+}
+
+/* Margens e preenchimento definidos, remoção de bordas, bordas arredondadas, cor de fundo específica e sombra. */
+button {
+    margin: 15px 0 10px 0;
+    padding: 7px 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #e9e640;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+/* Cursor alterado para ponteiro e mudança na cor de fundo ao passar o mouse sobre o botão. */
+button:hover{
+    cursor: pointer;
+    background-color: #dbd94b;
+}
+
+/* Define a largura da tabela como 50% do contêiner pai, remove o espaçamento entre células da tabela, centraliza a tabela horizontalmente e define margens superior de 15px e 20px no eixo vertical. */
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    margin: auto;
+    margin-top: 15px;
+}
+
+/* Adiciona uma borda preta de 1px à tabela, cabeçalhos e células. */
+table, th, td {
+    border: 1px solid black;
+}
+
+/* Adiciona preenchimento de 10px e centraliza o texto nas células e cabeçalhos da tabela. */
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Define a cor de fundo do cabeçalho da tabela como um cinza claro (#f2f2f2). */
+th {
+    background-color: #dbff86;
+}
